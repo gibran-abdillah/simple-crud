@@ -3,5 +3,31 @@
     {% include 'header.html' %}
 </html>
 <body>
-<a href='#' class='btn btn-info'>helo</a>
+
+<form action='/add-siswa' method="POST">
+
+<h3 class='text text-primary'>Add your data here ... </h1>
+<input type='text' name='nama' placeholder="Nama siswa" class='input-text'>
+<br>
+<input type='text' name='kelas' class='input-text' placeholder="kelas"><br><input type='submit' class='btn btn-info' value="Add" style='height:37px;'>
+</form>
+    <br>
+    <br>
+<table class='table'>
+    <thead>
+        <tr>
+            <th>ID </th>
+            <th>Nama </th>
+            <th>Kelas </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class='info'>
+            <td>1</td>
+            <td>Gibran </td>
+            <td>X TKJ-2</td>
+        </tr>
+    </tbody>
+</table>
+</table>
 </body>
