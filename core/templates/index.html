@@ -19,14 +19,18 @@
             <th>ID </th>
             <th>Nama </th>
             <th>Kelas </th>
+            <th>Action </th>
         </tr>
     </thead>
     <tbody>
+        {% for id,data_data in data %}
         <tr class='info'>
-            <td>1</td>
-            <td>Gibran </td>
-            <td>X TKJ-2</td>
+            <td>{{id}}</td>
+            <td>{{data_data.nama}} </td>
+            <td>{{data_data.kelas}}</td>
+            <td><a href='/edit/{{data_data.id}}'>E  </a><a href='/delete/{{data_data.id}}'> D</a></td>
         </tr>
+        {% endfor %}
     </tbody>
 </table>
 </table>
