@@ -1,4 +1,3 @@
 # simple-crud
-simple crud on flask python
+simple crud on flask python with orm
 
-## build with Bootstrap4
