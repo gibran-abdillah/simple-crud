@@ -13,8 +13,8 @@ def add_data():
         try:
             nama = request.form['nama']
             kelas = request.form['kelas']
-            anjg = data_siswa(nama=nama,kelas=kelas)
-            db.session.add(anjg) # add session 
+            data_student = data_siswa(nama=nama,kelas=kelas)
+            db.session.add(data_student) # add session 
             db.session.commit()
         except Exception as e:
             return e # show an error 
